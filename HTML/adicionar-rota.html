@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BusView</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>BusView</h1>
+  </header>
+
+  <main>
+    <h2>Adicionar ônibus e rotas</h2>
+
+    <form action="#" method="post">
+      <label for="data">Data</label>
+      <input type="date" id="data" name="data" required>
+
+      <h3>Ida</h3>
+      <label for="saida-ida">Local de saída</label>
+      <input type="text" id="saida-ida" name="saida-ida" required>
+
+      <label for="horario-ida">Horário de saída</label>
+      <input type="time" id="horario-ida" name="horario-ida" required>
+
+      <label for="pontos-ida">Pontos de parada da ida</label>
+      <textarea id="pontos-ida" name="pontos-ida" rows="4" required></textarea>
+
+      <h3>Volta</h3>
+      <label for="saida-volta">Local de saída</label>
+      <input type="text" id="saida-volta" name="saida-volta" required>
+
+      <label for="horario-volta">Horário de saída</label>
+      <input type="time" id="horario-volta" name="horario-volta" required>
+
+      <label for="pontos-volta">Pontos de parada da volta</label>
+      <textarea id="pontos-volta" name="pontos-volta" rows="4" required></textarea>
+
+      <button type="submit">Cadastrar rota</button>
+    </form>
+
+    <p><a href="index.html">Voltar</a></p>
+  </main>
+</body>
+</html>

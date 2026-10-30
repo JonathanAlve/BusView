@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: #104566;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+main {
+    background: #ffffff;
+    width: 100%;
+    max-width: 580px;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(16, 69, 102, 0.12);
+    margin: 40px 20px;
+}
+
+h2 {
+    color: #104566;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+h3 {
+    color: #104566;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 20px 0 12px 0;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+h3:nth-of-type(1) {
+    border-bottom-color: #4CAF50;
+}
+
+h3:nth-of-type(2) {
+    border-bottom-color: #FF8A00;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: #333;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    background-color: #fafafa;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+input:focus, textarea:focus {
+    border-color: #104566;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(16, 69, 102, 0.15);
+}
+
+button {
+    background-color: #FF8A00;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #e07a00;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+p a:hover {
+    color: #388e3c;
+    text-decoration: underline;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BusView</title>
+  <link rel="stylesheet" href="/CSS/administrador.css">
+</head>
+<body>
+  <header>
+    <img src="logo busView.png" alt="Logo BusView">
+    <a href="login.html">sair do modo administrador</a>
+  </header>
+
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h3>Menu</h3>
+      <nav>
+        <a href="#" class="sidebar-btn">Universidades</a>
+        <a href="#" class="sidebar-btn">Motoristas</a>
+        <a href="#" class="sidebar-btn">Rotas</a>
+
+        <div class="sidebar-divider"></div>
+        <span class="sidebar-subtitle">Menu de administrador</span>
+        
+        <a href="#" class="sidebar-btn btn-edit" id="btnEditar">Editar</a>
+        <a href="#" class="sidebar-btn btn-delete" id="btnExcluir">Excluir</a>
+      </nav>
+    </aside>
+
+    <main>
+      <h2>Rotas e horários do ônibus</h2>
+
+      <section>
+        <h3>Mapa da rota</h3>
+        <p>O mapa será exibido aqui.</p>
+      </section>
+
+      <section>
+        <h3>Ida</h3>
+        <p>Saída: a definir</p>
+        <p>Horário: a definir</p>
+        <p>Pontos de parada: a definir</p>
+      </section>
+
+      <section>
+        <h3>Volta</h3>
+        <p>Saída: a definir</p>
+        <p>Horário: a definir</p>
+        <p>Pontos de parada: a definir</p>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+      <span class="modal-close" id="closeModal">&times;</span>
+      <h3 id="modalTitle">Selecione uma opção</h3>
+      <p>O que você deseja gerenciar?</p>
+      
+      <div class="modal-buttons">
+        <button class="modal-btn">Universidades</button>
+        <button class="modal-btn">Motoristas</button>
+        <button class="modal-btn">Rotas</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalTitle = document.getElementById('modalTitle');
+    const btnEditar = document.getElementById('btnEditar');
+    const btnExcluir = document.getElementById('btnExcluir');
+    const closeModal = document.getElementById('closeModal');
+
+    btnEditar.addEventListener('click', (e) => {
+      e.preventDefault();
+      modalTitle.textContent = 'Editar';
+      modalOverlay.classList.add('active');
+    });
+
+    btnExcluir.addEventListener('click', (e) => {
+      e.preventDefault();
+      modalTitle.textContent = 'Excluir';
+      modalOverlay.classList.add('active');
+    });
+
+    closeModal.addEventListener('click', () => {
+      modalOverlay.classList.remove('active');
+    });
+
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) {
+        modalOverlay.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

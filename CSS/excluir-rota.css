@@ -70,7 +70,7 @@ select:focus {
 
 /* Botão de excluir */
 button {
-    background-color: #073b5c;
+    background-color: rgb(172, 7, 7);
     color: white;
     padding: 12px;
     border: none;
@@ -81,7 +81,7 @@ button {
 }
 
 button:hover {
-    background-color: #1683a8;
+    background-color: rgb(153, 7, 7);
 }
 
 /* Link voltar */
@@ -90,7 +90,7 @@ main p {
 }
 
 main p a {
-    color: #1683a8;
+    color: #4CAF50;
     text-decoration: none;
     font-weight: bold;
 }

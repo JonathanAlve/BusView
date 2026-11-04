@@ -25,12 +25,11 @@ RF01 - Visualizar Ônibus e Destinos: O aluno deve conseguir visualizar a lista 
 RF02 - Visualizar Pontos de Embarque e Horários: O sistema deve exibir os pontos de partida/embarque em Ocara e os horários previstos de saída e retorno.
 RF03 - Visualizar Rotas: O aluno deve conseguir consultar a rota ou itinerário percorrido por cada ônibus.
 RF04 - Buscar/Filtrar Ônibus: O sistema deve permitir filtrar os ônibus por faculdade, horário ou ponto de embarque.
-RF05 - Status do Veículo: O sistema deve indicar o status do ônibus (ex.: A caminho, Embarcando, Aguardando saída, Lotado).
+RF05 - Status do Veículo: O sistema deve indicar o status do ônibus.
 Visão da Administração
 RF06 - Autenticação de Administradores: O sistema deve permitir login seguro para a equipe de gestão da prefeitura/transporte.
-RF07 - Cadastrar e Gerenciar Ônibus: A administração deve poder cadastrar, editar e remover veículos (placa, modelo, capacidade de passageiros, motorista).
+RF07 - Cadastrar e Gerenciar Ônibus: A administração deve poder cadastrar, editar e remover veículos.
 RF08 - Alocar Ônibus por Rota/Faculdade: A administração deve conseguir associar rapidamente um ônibus cadastrado a uma faculdade/destino e a um horário específico do dia.
-RF09 - Cadastrar Pontos e Itinerários: A administração deve poder cadastrar os pontos de parada em Ocara e as rotas até as faculdades.
 
 Proposta de solução:
 Buscamos facilitar a visualização para os alunos e saber localizar onde deva pegar o ônibus e suas rotas e também facilitar o cadastro de cada ônibus para administração para alocar de maneira simples e direta através da interface web
